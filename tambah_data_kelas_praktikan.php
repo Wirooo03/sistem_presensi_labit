@@ -23,7 +23,6 @@
             $stmt->bind_param("ii", $id_praktikan, $id_kelas);
 
             if ($stmt->execute()) {
-                echo "Data berhasil ditambahkan!";
                 header("Location: lihat_data_kelas_praktikan.php?id=$id_praktikan"); // Redirect kembali
                 exit();
             } else {
